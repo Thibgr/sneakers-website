@@ -11,6 +11,8 @@ body {
   font-weight: regular;  
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 
 /* HEADER */
 
@@ -37,11 +39,17 @@ nav li {
 nav li a {
     text-decoration: none;
     color: #333333;
-    padding: 20px;
+    margin: 0px 20px;
+    padding-bottom: 20px;
     text-transform: uppercase;
     font-family: "fette";
     font-weight: regular;
-    font-size: 14pt;
+    font-size: 14px;
+}
+
+nav li a:hover {
+    color: #0089cf;
+    border-bottom: 4px solid #0089cf;
 }
 
 header ul {
@@ -57,11 +65,17 @@ header ul li {
 header ul li a {
     text-decoration: none;
     color: #333333;
-    padding: 20px;
+    margin: 0px 20px;
+    padding-bottom: 20px;
     text-transform: uppercase;
     font-family: "fette";
     font-weight: regular;
-    font-size: 14pt;
+    font-size: 14px;
+}
+
+header ul li a:hover {
+    color: #0089cf;
+    border-bottom: 4px solid #0089cf;
 }
 
 /* SECTION PRODUCT */
@@ -70,3 +84,262 @@ header ul li a {
     height: 610px;
     background: white;
 }
+
+#sec-product #full-size {
+    margin-top: 157px;
+    margin-left: 122px;
+    float: left;
+}
+
+#sec-product #info {
+    float: left;
+    margin-left: 92px;
+}
+
+#sec-product #fav {
+    background-image: url("../images/wish.png");
+    height: 50px; width: 50px;
+    margin-top: 58px;
+    margin-bottom: 43px;
+}
+
+#sec-product #info h2 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#sec-product #info h3 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+#sec-product #info h4 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 19px;
+}
+
+#sec-product #colors {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+#sec-product #colors span {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0089cf;
+}
+
+#sec-product #info img {
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+#sec-product form p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 14px;
+} 
+
+#sec-product select {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    width: 125px; height: 50px;
+    padding-left: 20px;
+    background-color: #FFF;
+    border: 1px solid #e4e4e4;
+    color: #666;
+    background: url('../images/select-arrow.png') no-repeat 96px 20px;
+    margin-right: 5px;
+    outline: none;
+}
+
+#sec-product submit {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 5px;
+    background-color: #333;
+    color: #FFF;
+    display: inline-block;
+    padding: 18px 31px
+}
+
+/* SECTION DESCRIPTION */
+
+#sec-description  {
+    height: 660px;
+    background: url('../images/tavas-lifestyle.png') -17px -91px no-repeat;
+    background-size: 105%;
+
+}
+
+#sec-description h2 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    margin: 261px 0px 28px 51px;
+}
+
+#sec-description p {
+    color: white;
+    display: inline-block;
+    margin: 0px 907px 0px 51px;
+    line-height: 1.786;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* SECTION STORY & BENEFITS */
+
+#sec-story {
+    height: 660px;
+    background: url('../images/tavas-top.png') no-repeat, #f5f5f5;
+    padding-left: 53px;
+}
+
+#sec-story h2 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 108px;
+}
+
+#sec-story #benefits {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    margin-top: 0px;
+}
+
+#sec-story h3 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 25px;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+
+#sec-story #p-story {
+    line-height: 1.786;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    width: 372px;
+    margin-bottom: 45px;
+}
+
+#sec-story h4 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 6px
+}
+
+#sec-story p {
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+    margin-bottom: 17px;
+}
+
+/* SECTION SOCIAL */
+
+#sec-social {
+    height: 660px;
+    background: #FFF;
+}
+
+#sec-social h2 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 108px;
+    padding-left: 53px;
+}
+
+#sec-social h3 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 25px;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 6px;
+    margin-bottom: 43px;
+    padding-left: 53px;
+}
+
+.swiper-container {
+    width: 1180px;
+    height: 280px;
+} 
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+
+
+/* ADD TO CART BOX/CONTAINER */
+
+#atc-container {
+    position: relative;
+}
+

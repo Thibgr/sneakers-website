@@ -6,6 +6,13 @@
     
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    
 </head>
 <body>
   
@@ -32,83 +39,125 @@
    <!-- SECTION PRODUCT -->
    
    <section id="sec-product">
-        <img src="#" alt="sneaker">
-        <div id="fav"></div>
-        <h2>nike</h2>
-        <h3>air max tavas sd</h3>
-        <h4>$ 160.00</h4>
-        <p>Colors - Black/Pink Pow/Tour Yellow/White </p>
+        <img src="images/sneakers-pink.png" alt="sneaker" id="full-size">
         
-        <img src="#" alt="Min pink">
-        <img src="#" alt="Min Black">
-        
-        <form action="#">
-            <p>Size charts</p>
-            <select name="size" id="">
-                <option value="6">6</option>
-                <option value="6,5">6,5</option>
-                <option value="7">7</option>
-                <option value="7,5">7,5</option>
-                <option value="8">8</option>
-                <option value="8,5">8,5</option>
-                <option value="9">9</option>
-                <option value="9,5">9,5</option>
-                <option value="10">10</option>
-                <option value="10,5">10,5</option>
-                <option value="11">11</option>
-                <option value="11,5">11,5</option>
-                <option value="12">12</option>
-                <option value="12,5">12,5</option>
-                <option value="13">13</option>
-            </select>
+        <div id="info">
+            <div id="fav"></div>
+            <h2>nike</h2>
+            <h3>air max tavas sd</h3>
+            <h4>$ 160.00</h4>
+            <p id="colors">Colors - <span>Black/Pink Pow/Tour Yellow/White </span></p>
 
-            <submit>add to cart</submit>
-        </form>
+            <img src="images/sneakers-pink-min.png" alt="Min pink">
+            <img src="images/sneakers-grey-min.png" alt="Min grey">
+
+            <form action="#">
+                <p>Size charts</p>
+                <select name="size" id="">
+                    <option value="" disabled selected>SIZE</option>
+                    <option value="6">6</option>
+                    <option value="6,5">6,5</option>
+                    <option value="7">7</option>
+                    <option value="7,5">7,5</option>
+                    <option value="8">8</option>
+                    <option value="8,5">8,5</option>
+                    <option value="9">9</option>
+                    <option value="9,5">9,5</option>
+                    <option value="10">10</option>
+                    <option value="10,5">10,5</option>
+                    <option value="11">11</option>
+                    <option value="11,5">11,5</option>
+                    <option value="12">12</option>
+                    <option value="12,5">12,5</option>
+                    <option value="13">13</option>
+                </select>
+
+                <submit>add to cart</submit>
+            </form>
+        </div>
    </section>
    
-   <!-- SECTION DESCRIPTION --> 
    
-   <section>
-    
-    <h2>CLASSIC CUSHIONING. MODERN COMFORT.</h2>
-    <p>The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and gradient detail offer a comfortable fit and dynamic look.</p>
-    
-   </section>
+   <!-- ADD TO CART CONTAINER --> 
    
-   <!-- SECTION STORY & BENEFITS --> 
+   <div id="atc-container">
    
-   <section>
-    
-    <h2>story</h2>
-    <h3>NIKE AIR MAX ORIGINS</h3>
-    <p>Nike's revolutionary Air-Sole unit made its way into Nike footwear in the late '70s. In 1987, the Nike Air Max 1 debuted with visible air in its heel, allowing fans more than just the feel of Air-Sole comfort</p>
-    
-    <h2>benefits</h2>
-    <h3>Layered textile/synthetic upper</h3>
-    <p>for lightweight durability and comfort</p>
-    
-    <h3>Injected Phylon midsole doubles</h3>
-    <p>Outsole to reduce the overall weight of the shoe</p>
-    
-    <h3>Max Air heel unit</h3>
-    <p>delivers maximum lightweight cushioning</p>
-    
-    <h3>Rubber Waffle outsole</h3>
-    <p>Durable, multi-surface traction</p>
-    
-   </section>
+      
+       <!-- SECTION DESCRIPTION --> 
+      
+      
+       <section id="sec-description">
+
+        <h2>CLASSIC CUSHIONING. MODERN COMFORT.</h2>
+        <p>The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and gradient detail offer a comfortable fit and dynamic look.</p>
+
+       </section>
+
+       <!-- SECTION STORY & BENEFITS --> 
+
+       <section id="sec-story">
+
+        <h2>story</h2>
+        <h3>NIKE AIR MAX ORIGINS</h3>
+        <p id="p-story">Nike's revolutionary Air-Sole unit made its way into Nike footwear in the late '70s. In 1987, the Nike Air Max 1 debuted with visible air in its heel, allowing fans more than just the feel of Air-Sole comfort</p>
+
+        <h2 id="benefits">benefits</h2>
+        <h4>Layered textile/synthetic upper</h4>
+        <p>for lightweight durability and comfort</p>
+
+        <h4>Injected Phylon midsole doubles</h4>
+        <p>Outsole to reduce the overall weight of the shoe</p>
+
+        <h4>Max Air heel unit</h4>
+        <p>delivers maximum lightweight cushioning</p>
+
+        <h4>Rubber Waffle outsole</h4>
+        <p>Durable, multi-surface traction</p>
+
+       </section>
+       
+       <!-- ADD TO CART BOX -->
+       
+       <div id="atc-box">
+          <div id="atc-box-mobile">
+              <div id=""></div>
+          </div>
+       </div>
+   
+   </div>
     
     <!-- SECTION SOCIAL --> 
     
-    <section>
+    <section id="sec-social">
         <h2>social</h2>
         <h3>#nikeairmax</h3>
         
-        <!-- SLIDER -->
-        
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                
+                <img src="images/tavas-social-black.png" alt="tavas black" class="swiper-slide">
+                <img src="images/tavas-social-blue.png" alt="tavas blue" class="swiper-slide">
+                <img src="images/tavas-social-grey.png" alt="tavas grey" class="swiper-slide">
+                <img src="images/tavas-social-pink.png" alt="tavas pink" class="swiper-slide">
+                
+            </div>
+        </div>
         
     </section>
     
+    <script src="JS/action.js"></script>
+    <script src="dist/js/swiper.min.js"></script>
     
+     <script>        
+          var Swiper = new Swiper ('.swiper-container', {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 20, 
+            mousewheelControl: true,
+          })        
+  </script>
+  
 </body>
 </html>
