@@ -1,3 +1,5 @@
+/*
+
 jQuery(document).ready(function($){
     _box        = $('#atc-box-mobile');
     
@@ -20,15 +22,35 @@ jQuery(document).ready(function($){
     });
 }); 
 
+*/
 
-$('#atc-box-mobile')
+/*
 
-
-
-
-/* 
-$(document).ready(function() {
-    $('#atc-box').scrollToFixed({ limit: $($('h2')[2]).offset().top });
+$(document).ready(function(){
+    $('#atc-box-mobile').scrollToFixed({ marginTop: $('#atc-box-mobile').css('marginTop'), limit: $($('h2')[5]).offset().top });
 });
 
 */
+
+
+$(document).ready(function(){
+    $("#tavas-grey-min").click(function(){
+        $(".product-active").attr({
+            "src" : "images/sneakers-grey.png"
+            });
+        });
+    
+    
+    $("#tavas-pink-min").click(function(){
+        $('.product-active').attr({
+            "src" : "images/sneakers-pink.png"
+            })
+        })
+    
+    
+    $('#atc-box').scrollToFixed({ 
+        limit: $('#atc-container').offset().bottom,
+    });
+    
+    
+});

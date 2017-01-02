@@ -62,6 +62,23 @@ header ul li {
     margin-top: 35px;
 }
 
+
+header ul li:nth-child(1){
+    background: url('../images/sprite-header-1.png') no-repeat;
+}
+
+header ul li:nth-child(2){
+    background: url('../images/sprite-header-1.png') no-repeat 0 -16px;
+}
+
+header ul li:nth-child(3){
+    background: url('../images/sprite-header-1.png') no-repeat 0 -32px;
+}
+
+header ul li span {
+    color: #0089cf;
+}
+
 header ul li a {
     text-decoration: none;
     color: #333333;
@@ -177,7 +194,7 @@ header ul li a:hover {
     outline: none;
 }
 
-#sec-product submit {
+#sec-product button {
     font-family: "fette", sans-serif;
     font-weight: regular;
     font-size: 14px;
@@ -186,7 +203,8 @@ header ul li a:hover {
     background-color: #333;
     color: #FFF;
     display: inline-block;
-    padding: 18px 31px
+    padding: 18px 31px;
+    border: none;
 }
 
 /* SECTION DESCRIPTION */
@@ -225,7 +243,7 @@ header ul li a:hover {
     padding-left: 53px;
 }
 
-#sec-story h2 {
+#sec-story h2:first-of-type {
     font-family: "fette", sans-serif;
     font-weight: regular;
     font-size: 14px;
@@ -235,7 +253,7 @@ header ul li a:hover {
     margin-top: 108px;
 }
 
-#sec-story #benefits {
+#sec-story h2 {
     font-family: "fette", sans-serif;
     font-weight: regular;
     font-size: 14px;
@@ -255,7 +273,7 @@ header ul li a:hover {
     margin-bottom: 24px;
 }
 
-#sec-story #p-story {
+#sec-story p:first-of-type {
     line-height: 1.786;
     font-family: "Roboto";
     font-weight: 300;
@@ -361,3 +379,85 @@ header ul li a:hover {
     position:absolute; width:292px; height:60px; top:63px; left:0;
     background:rgba(246,168,0,0.9);
 } 
+
+#atc-box-mobile h2 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 25px;
+    color: #333;
+    text-transform: uppercase;
+    margin: 25px 0 0 26px;
+}
+
+#atc-box-mobile h3 {
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 14px;
+    color: #666;
+    margin: 8px 0 0 26px;
+}
+
+#atc-box-mobile h4 {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    color: #0089cf;
+    text-transform: uppercase;
+    margin: 14px 0 0 26px;
+}
+
+#atc-box-mobile img {
+    width: 260px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+#atc-box-mobile p:first-of-type {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    color: #333;
+    margin: 50px 0 0 26px;
+    float: left;
+}
+
+#atc-box-mobile p {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    color: #333;
+    right: 26px;
+    text-align: right;
+    margin: 47px 26px 0 0px;
+}
+
+#atc-box-mobile select {
+    width: 113px; height: 48px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background: url('../images/select-arrow.png') no-repeat 89px 20px;
+    background-color: #FFF;
+    border: 1px solid #e4e4e4;
+    margin: 20px 5px 0 26px;
+    padding-left: 20px;
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    color: #666;
+}
+
+#atc-box-mobile submit {
+    font-family: "fette", sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 5px;
+    background-color: #333;
+    color: #FFF;
+    display: inline-block;
+    width: 113px; height: 31px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 17px
+}
