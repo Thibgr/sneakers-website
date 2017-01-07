@@ -28,9 +28,9 @@
        </nav>
        
        <ul>
-           <li><a href="#">search</a></li>
-           <li><a href="#">cart <span>(#)</span></a></li>
-           <li><a href="#">sign in</a></li>
+           <li><span id="search"></span><input type="text" placeholder="SEARCH" ></li>
+           <li><span id="cart"></span><a href="#">cart <span>(#)</span></a></li>
+           <li><span></span><a href="#">sign in</a></li>
        </ul>
    </header>
    
@@ -40,7 +40,11 @@
         <img src="images/sneakers-pink.png" alt="product" id="full-size" class="product-active">
         
         <div id="info">
-            <div id="fav"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.5px" height="15.5px" id="fav">
+                <path class="fav-col" fill-rule="evenodd"  stroke="rgb(204, 204, 204)" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                 d="M16.500,4.500 C16.500,2.291 14.709,0.500 12.500,0.500 C10.291,0.500 8.500,2.355 8.500,4.500 C8.500,2.291 6.709,0.500 4.500,0.500 C2.291,0.500 0.500,2.291 0.500,4.500 C0.500,8.492 8.500,14.500 8.500,14.500 C8.500,14.500 16.500,8.485 16.500,4.500 Z"/>
+            </svg>
+                
             <h2>nike</h2>
             <h3>air max tavas sd</h3>
             <h4>$ 160.00</h4>
@@ -49,7 +53,7 @@
             <img src="images/sneakers-pink-min.png" alt="Min pink" id="tavas-pink-min">
             <img src="images/sneakers-grey-min.png" alt="Min grey" id="tavas-grey-min">
 
-            <form action="cart.asp" method="get">
+            <form>
                 <p>Size charts</p>
                 <select name="size" id="">
                     <option value="" disabled selected>SIZE</option>
@@ -70,7 +74,7 @@
                     <option value="13">13</option>
                 </select>
 
-                <button type="submit">add to cart</button>
+                <div id="submit">add to cart</div>
             </form>
         </div>
    </section>
