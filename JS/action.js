@@ -29,10 +29,6 @@ function eraseCookie(name) {
     setCookie(name,"",-1);
 }
 
-
-
-
-
 // FUNCTIONS
 
 
@@ -56,6 +52,9 @@ $(document).ready(function(){
     
     // BOX 
     
+    
+    /*
+    
     $('#atc-box').scrollToFixed({ 
       limit: ($(window).scrollTop() === 1410),   
     });
@@ -63,7 +62,7 @@ $(document).ready(function(){
     
     console.log(document.scrollTop);
     
-    /*
+    
     $('#atc-box').scrollTop(1410){
         $(this).css('position', 'absolute');
     }
@@ -82,9 +81,63 @@ $(document).ready(function(){
             $('#atc-box').css('position', 'absolute')
         }
 } 
-                             
-    
     */
+    
+    
+    /*
+    
+    window.onscroll = function(){
+    if (document.body.scrollTop >= 0 && document.body.scrollTop < 690){
+        fp.style.position = "absolute";
+        fp.style.top = "800px";
+    }   
+    else if (document.body.scrollTop >= 690 && document.body.scrollTop <= 1400){
+        fp.style.position = "fixed";
+        fp.style.top = "118px";
+        console.log(body.scrollTop);
+    }
+    else if (document.body.scrollTop > 1400){
+        fp.style.position = "absolute";
+        fp.style.top = "1500px"; 
+    }
+}
+    
+ */  
+    
+    
+function ScrollBox(){
+    
+    var _box = $("#atc-box"),
+         t = parseInt(-400)+parseInt($('body').scrollTop());
+    
+    if($("body").scrollTop() >= 0 && $("body").scrollTop() < 600){
+        _box.css({
+            'top' : '115px'
+        });
+        
+        console.log('ok');
+    }
+    
+    else if ($("body").scrollTop() >= 600 && $("body").scrollTop() <= 1400){
+        _box.css({
+            'top' : t+'px'
+        });
+        
+        console.log('ok 2');
+    }
+    
+    else if ($("body").scrollTop() > 1400){
+        _box.css({
+            'top' : '754px'
+        });
+        
+        console.log('ok 3');
+    }
+}
+    
+    $(window).scroll(ScrollBox);
+    ScrollBox();
+    
     
     // COOKIES
     
