@@ -108,22 +108,20 @@ $(document).ready(function(){
 function ScrollBox(){
     
     var _box = $("#atc-box"),
-         t = parseInt(-400)+parseInt($('body').scrollTop());
+         t = parseInt(-638 )+parseInt($('body').scrollTop());
     
-    if($("body").scrollTop() >= 0 && $("body").scrollTop() < 600){
+    if($("body").scrollTop() >= 0 && $("body").scrollTop() < 750){
         _box.css({
             'top' : '115px'
         });
         
-        console.log('ok');
     }
     
-    else if ($("body").scrollTop() >= 600 && $("body").scrollTop() <= 1400){
+    else if ($("body").scrollTop() >= 750 && $("body").scrollTop() <= 1400){
         _box.css({
             'top' : t+'px'
         });
         
-        console.log('ok 2');
     }
     
     else if ($("body").scrollTop() > 1400){
@@ -131,7 +129,6 @@ function ScrollBox(){
             'top' : '754px'
         });
         
-        console.log('ok 3');
     }
 }
     
